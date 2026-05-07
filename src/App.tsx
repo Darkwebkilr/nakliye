@@ -2,12 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   Truck, 
-  ShieldCheck, 
   Phone, 
   CheckCircle2, 
   Zap, 
   Award,
-  Clock, 
   MapPin, 
   MousePointer2 
 } from 'lucide-react';

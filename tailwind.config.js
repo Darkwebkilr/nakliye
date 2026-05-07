@@ -8,18 +8,26 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#0052FF", // Canlı Modern Mavi
-          dark: "#0035A3",
-          light: "#EBF2FF",
+          DEFAULT: "#8B5CF6", // Electric Violet
+          dark: "#6D28D9",
+          light: "#C4B5FD",
         },
         secondary: {
-          DEFAULT: "#0A1128", // Çok Koyu Lacivert (Siyah yerine)
-          light: "#1C2541",
+          DEFAULT: "#0F172A", // Deep Slate
+          dark: "#020617",
+          light: "#1E293B",
         },
-        accent: "#00D1FF", // Turkuaz/Açık Mavi vurgu
+        accent: {
+          DEFAULT: "#10B981", // Emerald
+          neon: "#34D399",
+        },
+        background: "#020617",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+      },
+      animation: {
+        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       }
     },
   },

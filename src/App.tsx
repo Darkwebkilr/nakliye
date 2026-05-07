@@ -37,7 +37,7 @@ const App: React.FC = () => {
       {/* Floating CTA for Mobile */}
       <div className="fixed bottom-6 left-6 right-6 z-[100] md:hidden flex flex-col gap-3">
         <a 
-          href="https://wa.me/905465386866"
+          href="https://wa.me/905465386866?text=Nakliye%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
           target="_blank"
           rel="noopener noreferrer"
           className="w-full bg-[#25D366] text-white py-5 rounded-2xl font-black text-lg shadow-2xl flex items-center justify-center gap-3"
@@ -75,7 +75,7 @@ const App: React.FC = () => {
               0546 538 68 66
             </a>
             <a 
-              href="https://wa.me/905465386866"
+              href="https://wa.me/905465386866?text=Nakliye%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] text-white px-8 py-4 rounded-xl font-black text-xs tracking-widest uppercase hover:bg-green-600 transition-all shadow-xl flex items-center gap-2"
@@ -135,7 +135,7 @@ const App: React.FC = () => {
             className="flex flex-col lg:flex-row gap-6 justify-center items-center"
           >
             <a 
-              href="https://wa.me/905465386866"
+              href="https://wa.me/905465386866?text=Nakliye%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto bg-[#25D366] text-white px-12 py-7 rounded-[2rem] font-black text-xl shadow-[0_20px_40px_-10px_rgba(37,211,102,0.3)] hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-4 group"

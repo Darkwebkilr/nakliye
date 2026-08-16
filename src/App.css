@@ -20,3 +20,60 @@
   0% { left: -100%; }
   100% { left: 100%; }
 }
+
+/* Custom Premium Slider Styles */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ea580c;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(234, 88, 12, 0.4);
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.6);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ea580c;
+  cursor: pointer;
+  border: 3px solid #ffffff;
+  box-shadow: 0 4px 10px rgba(234, 88, 12, 0.4);
+  transition: all 0.2s ease;
+}
+
+/* Premium Card Hover Glow */
+.premium-glow-card {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.premium-glow-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.4), transparent 60%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.premium-glow-card:hover::before {
+  opacity: 1;
+}
+
+.premium-glow-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -12px rgba(234, 88, 12, 0.08);
+}
+

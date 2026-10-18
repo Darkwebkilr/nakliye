@@ -12,7 +12,7 @@ export default function AdsFraud() {
       localStorage.setItem("evo_device_id", deviceId)
     }
     const campaignId = urlParams.get("campaign_id") || "default_kampanya"
-    fetch("http://129.159.15.56:3000/api/track-click", {
+    fetch("https://api.tekirdagugurcannakliyat.com/api/track-click", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

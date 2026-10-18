@@ -16,7 +16,7 @@ export default function AdsFraud() {
       method: "POST",
       body: JSON.stringify({
         device_id: deviceId,
-        campaing_id: campaignId
+        campaign_id: campaignId
       })
     })
       .then(res => res.json())

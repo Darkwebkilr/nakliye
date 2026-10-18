@@ -1,24 +1,25 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Truck, 
-  Phone, 
-  CheckCircle2, 
-  Zap, 
+import AdsFraud from './entegrations/ads-fraud';
+import {
+  Truck,
+  Phone,
+  CheckCircle2,
+  Zap,
   Award,
-  MapPin, 
-  MousePointer2 
+  MapPin,
+  MousePointer2
 } from 'lucide-react';
 import './App.css';
 
 const WhatsAppIcon = ({ className }: { className?: string }) => (
-  <svg 
-    viewBox="0 0 24 24" 
-    fill="currentColor" 
+  <svg
+    viewBox="0 0 24 24"
+    fill="currentColor"
     className={className}
     xmlns="http://www.w3.org/2000/svg"
   >
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
   </svg>
 );
 
@@ -31,12 +32,13 @@ const AnimatedDivider = () => (
 const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-white font-sans text-black selection:bg-orange-500 selection:text-white overflow-x-hidden">
+      <AdsFraud></AdsFraud>
       <div className="grain" />
       <div className="light-mesh" />
 
       {/* Floating CTA for Mobile */}
       <div className="fixed bottom-6 left-6 right-6 z-[100] md:hidden flex flex-col gap-3">
-        <a 
+        <a
           href="https://wa.me/905465386866?text=Nakliye%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
           target="_blank"
           rel="noopener noreferrer"
@@ -45,7 +47,7 @@ const App: React.FC = () => {
           <WhatsAppIcon className="w-6 h-6" />
           WHATSAPP TEKLİF
         </a>
-        <a 
+        <a
           href="tel:05465386866"
           className="w-full bg-blue-600 text-white py-5 rounded-2xl font-black text-lg shadow-2xl flex items-center justify-center gap-3"
         >
@@ -60,7 +62,7 @@ const App: React.FC = () => {
           <div className="flex items-center">
             <img src="/logoo.png" alt="Trakya Uğurcan Nakliyat Logo" className="h-20 md:h-28 w-auto object-contain" />
           </div>
-          
+
           <div className="hidden lg:flex items-center gap-12 font-bold text-xs uppercase tracking-[0.2em] text-black/40">
             <a href="#hizmetler" className="hover:text-orange-600 transition-colors">Hizmetler</a>
             <a href="#fark" className="hover:text-orange-600 transition-colors">Neden Biz?</a>
@@ -74,7 +76,7 @@ const App: React.FC = () => {
               </div>
               0546 538 68 66
             </a>
-            <a 
+            <a
               href="https://wa.me/905465386866?text=Nakliye%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,8 +92,8 @@ const App: React.FC = () => {
       {/* HERO: Conversion Central */}
       <header className="relative pt-64 pb-32 px-8 overflow-hidden">
         <div className="max-w-[1400px] mx-auto text-center relative">
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 0.08, scale: 1 }}
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 w-[600px] h-[600px] pointer-events-none"
@@ -99,7 +101,7 @@ const App: React.FC = () => {
             <img src="/logoo.png" alt="" className="w-full h-full object-contain grayscale" />
           </motion.div>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="inline-flex items-center gap-3 bg-orange-50 border border-orange-100 text-orange-600 px-6 py-2.5 rounded-full text-[10px] font-black tracking-[0.3em] uppercase mb-12"
@@ -107,8 +109,8 @@ const App: React.FC = () => {
             <Zap className="w-3.5 h-3.5 fill-orange-600" />
             TRAKYA'NIN EN GÜVENİLİR NAKLİYE ÇÖZÜMÜ
           </motion.div>
-          
-          <motion.h1 
+
+          <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -119,7 +121,7 @@ const App: React.FC = () => {
             Taşınma.
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
@@ -128,13 +130,13 @@ const App: React.FC = () => {
             Süleymanpaşa'dan Çorlu'ya, Çerkezköy'den tüm Trakya'ya... Eşyalarınızı kaliteli paketleme ve uzman kadromuzla hasarsız ulaştırıyoruz.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             className="flex flex-col lg:flex-row gap-6 justify-center items-center"
           >
-            <a 
+            <a
               href="https://wa.me/905465386866?text=Nakliye%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
               target="_blank"
               rel="noopener noreferrer"
@@ -144,14 +146,14 @@ const App: React.FC = () => {
               WHATSAPP
             </a>
 
-            <a 
+            <a
               href="tel:05465386866"
               className="w-full sm:w-auto bg-black text-white px-12 py-7 rounded-[2rem] font-black text-xl shadow-2xl hover:bg-orange-600 transition-all flex items-center justify-center gap-4 group"
             >
               <Phone className="w-6 h-6 fill-white" />
               HEMEN ARA
             </a>
-            
+
             <div className="flex items-center gap-4 text-left lg:ml-8">
               <div className="w-12 h-12 rounded-full bg-orange-50 flex items-center justify-center shrink-0">
                 <Zap className="w-6 h-6 text-orange-600" />
@@ -170,7 +172,7 @@ const App: React.FC = () => {
       {/* Modern Services Grid */}
       <section id="hizmetler" className="py-24 bg-black text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-orange-600/10 via-transparent to-transparent"></div>
-        
+
         <div className="max-w-[1400px] mx-auto px-8 relative z-10">
           <div className="flex flex-col lg:flex-row justify-between items-end mb-20 gap-12">
             <div>
@@ -181,37 +183,37 @@ const App: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
-              { 
-                t: "Evden Eve Nakliyat", 
-                d: "Tekirdağ merkez ve tüm ilçelerinde marangozlu, ambalajlı ve sigortalı ev taşıma hizmeti. Eşyalarınız uzman kadromuzla yeni adresinize güvenle ulaştırılır.", 
+              {
+                t: "Evden Eve Nakliyat",
+                d: "Tekirdağ merkez ve tüm ilçelerinde marangozlu, ambalajlı ve sigortalı ev taşıma hizmeti. Eşyalarınız uzman kadromuzla yeni adresinize güvenle ulaştırılır.",
                 img: "/2.jpeg",
-                i: Truck 
+                i: Truck
               },
-              { 
-                t: "Asansörlü Taşımacılık", 
-                d: "Çorlu ve Çerkezköy başta olmak üzere, yüksek katlı binalarda modüler asansör sistemlerimizle eşyalarınızı çizilmeden ve hızla taşıyoruz.", 
+              {
+                t: "Asansörlü Taşımacılık",
+                d: "Çorlu ve Çerkezköy başta olmak üzere, yüksek katlı binalarda modüler asansör sistemlerimizle eşyalarınızı çizilmeden ve hızla taşıyoruz.",
                 img: "/3.jpeg",
-                i: MapPin 
+                i: MapPin
               },
-              { 
-                t: "Şehirlerarası Nakliye", 
-                d: "Trakya'dan Türkiye'nin 81 iline sigortalı taşımacılık. Ofis, büro ve parça eşya taşımacılığında profesyonel lojistik çözümleri sunuyoruz.", 
+              {
+                t: "Şehirlerarası Nakliye",
+                d: "Trakya'dan Türkiye'nin 81 iline sigortalı taşımacılık. Ofis, büro ve parça eşya taşımacılığında profesyonel lojistik çözümleri sunuyoruz.",
                 img: "/4.jpeg",
-                i: Award 
+                i: Award
               },
             ].map((card, i) => (
-              <motion.div 
+              <motion.div
                 key={i}
                 whileHover={{ y: -20 }}
                 className="group relative h-[600px] rounded-[4rem] overflow-hidden border border-white/10"
               >
-                <img 
-                  src={card.img} 
-                  alt={card.t} 
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700" 
+                <img
+                  src={card.img}
+                  alt={card.t}
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
-                
+
                 <div className="absolute inset-0 p-12 flex flex-col justify-end">
                   <div className="w-16 h-16 bg-orange-600 rounded-2xl flex items-center justify-center mb-8 shadow-2xl group-hover:scale-110 transition-transform">
                     <card.i className="w-8 h-8 text-white" />
@@ -232,7 +234,7 @@ const App: React.FC = () => {
         <div className="max-w-[1400px] mx-auto text-center">
           <span className="text-orange-600 font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">HİZMET BÖLGELERİMİZ</span>
           <h2 className="text-5xl md:text-6xl font-black tracking-tight uppercase mb-16">Tüm Trakya'da Yanınızdayız</h2>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {[
               "Süleymanpaşa", "Çorlu", "Çerkezköy", "Kapaklı", "Ergene",
@@ -330,7 +332,7 @@ const App: React.FC = () => {
               Trakya'nın en güvenilir nakliye firması. Tekirdağ, Çorlu ve Çerkezköy bölgelerinde asansörlü, sigortalı ve marangozlu evden eve nakliyat hizmeti sunuyoruz.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-12 flex-grow">
             <div>
               <h5 className="font-black text-[10px] uppercase tracking-widest mb-6">Hizmetlerimiz</h5>
@@ -365,7 +367,7 @@ const App: React.FC = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="max-w-[1400px] mx-auto mt-20 pt-10 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-[10px] font-black tracking-widest uppercase opacity-20">
             © 2026 TRAKYA UĞURCAN NAKLİYAT. TÜM HAKLARI SAKLIDIR.

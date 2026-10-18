@@ -14,6 +14,9 @@ export default function AdsFraud() {
     const campaignId = urlParams.get("campaign_id") || "default_kampanya"
     fetch("http://129.159.15.56:3000/api/track-click", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
       body: JSON.stringify({
         device_id: deviceId,
         campaign_id: campaignId

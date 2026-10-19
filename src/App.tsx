@@ -36,7 +36,6 @@ const App: React.FC = () => {
       <div className="grain" />
       <div className="light-mesh" />
 
-      {/* Floating CTA for Mobile */}
       <div className="fixed bottom-6 left-6 right-6 z-[100] md:hidden flex flex-col gap-3">
         <a
           href="https://wa.me/905465386866?text=Nakliye%20hizmetleriniz%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum"
@@ -56,7 +55,6 @@ const App: React.FC = () => {
         </a>
       </div>
 
-      {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-[60] bg-white border-b border-slate-100/50">
         <div className="flex items-center justify-between px-8 py-4 max-w-[1400px] mx-auto">
           <div className="flex items-center">
@@ -89,7 +87,6 @@ const App: React.FC = () => {
         </div>
       </nav>
 
-      {/* HERO: Conversion Central */}
       <header className="relative pt-64 pb-32 px-8 overflow-hidden">
         <div className="max-w-[1400px] mx-auto text-center relative">
 
@@ -169,7 +166,6 @@ const App: React.FC = () => {
 
       <AnimatedDivider />
 
-      {/* Modern Services Grid */}
       <section id="hizmetler" className="py-24 bg-black text-white relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-orange-600/10 via-transparent to-transparent"></div>
 
@@ -229,7 +225,6 @@ const App: React.FC = () => {
 
       <AnimatedDivider />
 
-      {/* Service Areas Section */}
       <section className="py-20 px-8 bg-slate-50">
         <div className="max-w-[1400px] mx-auto text-center">
           <span className="text-orange-600 font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">HİZMET BÖLGELERİMİZ</span>
@@ -302,7 +297,6 @@ const App: React.FC = () => {
 
       <AnimatedDivider />
 
-      {/* FAQ */}
       <section id="faq" className="py-20 px-8">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-black text-center mb-12 tracking-tight">Sıkça Sorulanlar</h2>
@@ -323,7 +317,6 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-20 px-8 border-t border-black/5 bg-slate-50/30">
         <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
           <div className="max-w-sm">

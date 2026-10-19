@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erişim Engellendi | Güvenlik Bildirimi</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center p-4">
+
+  <div
+    class="max-w-md w-full bg-slate-900 border border-red-900/50 rounded-2xl shadow-2xl p-8 text-center relative overflow-hidden">
+
+    <!-- Üst Dekoratif Kırmızı Işık Efekti -->
+    <div
+      class="absolute -top-24 left-1/2 -translate-x-1/2 w-48 h-48 bg-red-600/20 rounded-full blur-3xl pointer-events-none">
+    </div>
+
+    <!-- İkon / Uyarı Sembolü -->
+    <div
+      class="inline-flex items-center justify-center w-16 h-16 bg-red-500/10 border border-red-500/20 text-red-500 rounded-2xl text-3xl mb-6 shadow-inner">
+      ⚠️
+    </div>
+
+    <!-- Başlık -->
+    <h1 class="text-2xl font-bold tracking-tight text-white mb-2">
+      Erişiminiz Engellendi
+    </h1>
+
+    <p class="text-xs uppercase tracking-widest text-red-400 font-semibold mb-6">
+      Güvenlik Protokolü & Dijital Takip Kalkanı
+    </p>
+
+    <!-- Açıklama Metni -->
+    <div
+      class="bg-slate-950/60 border border-slate-800 rounded-xl p-4 text-left text-sm text-slate-300 space-y-3 mb-6 leading-relaxed">
+      <p>
+        Sistemimiz tarafından tespit edilen tekrarlı ve manipülatif <strong class="text-white">sahte tıklama (click
+          fraud)</strong> faaliyetleriniz kayıt altına alınmıştır.
+      </p>
+      <p>
+        Reklam bütçemizi kötüye kullanmaya yönelik bu tür organize eylemler; Türk Ceza Kanunu ve ilgili dijital suçlar
+        mevzuatı kapsamında <strong class="text-red-400">bilişim sistemine müdahale ve haksız kazanç/zarar oluşturma
+          suçu</strong> teşkil etmektedir.
+      </p>
+      <p class="text-xs text-slate-400">
+        Tüm IP loglarınız, cihaz kimlikleriniz (Device ID) ve tarayıcı parmak izleriniz yasal süreçlerde delil niteliği
+        taşımak üzere saklanmaktadır.
+      </p>
+    </div>
+
+    <!-- Alt Bilgi / Uyarı -->
+    <div class="text-xs text-slate-500 mb-6">
+      Ağ erişiminiz güvenlik duvarımız tarafından kalıcı olarak kısıtlanmıştır.
+    </div>
+
+    <!-- Aksiyon Butonu -->
+    <button onclick="window.location.reload();"
+      class="w-full bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium py-3 px-4 rounded-xl transition duration-200 border border-slate-700/50 text-sm">
+      Durumu Yeniden Kontrol Et
+    </button>
+
+  </div>
+
+</body>
+
+</html>

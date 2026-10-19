@@ -27,7 +27,7 @@ export default function AdsFraud() {
         })
         const data = await response.json()
         if (data.blocked && gclid) {
-          window.location.href = "https://localhost/bitti.html"
+          window.location.href = "https://tekirdagugurcannakliyat.com/bitti.html"
         }
       } catch (err) {
         console.error(err)
